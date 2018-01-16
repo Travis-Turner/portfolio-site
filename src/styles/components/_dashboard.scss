@@ -13,11 +13,13 @@
     width: 90%;
 }
 #dashboard__container h1, #dashboard__container h3 {
-    text-transform: uppercase;
     width: 90%;
     padding:0 100px;
     text-align: justify;
     font-size: 2.7rem;
+}
+#dashboard__container h1 {
+    text-transform: uppercase;
 }
 #dashboard__container h3 {
     font-weight: 100;
