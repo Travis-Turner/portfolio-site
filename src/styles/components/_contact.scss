@@ -1,0 +1,34 @@
+#form__container {
+    font-family: $open-sans;
+    font-size: 2.0rem;
+    background-color: $med-blue;
+    color: white;
+    margin-top: -40px;
+    height: 100vh;
+}
+#form__container h1 {
+    text-align: center;
+}
+.form__rule {
+    border-color: rgba($color: #ffffff, $alpha: 0.3);
+}
+#form__info {
+    width: 50%;
+    margin: 40px auto;
+}
+#form__form-message {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+#form__container a {
+    font-weight: 100;
+    color: rgba(255,255,255,0.5); 
+    text-decoration: none;
+}
+#form__container a:hover {
+    color: #50ffe2;
+}
+form { 
+    background-color: $med-blue;
+}
+

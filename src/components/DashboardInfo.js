@@ -30,7 +30,7 @@ const DashboardInfo = () => (
         </p>
         <p>
             Finally, I have professioanl experience using a myrid of video and audio editing software as well as writing for
-            digital media.  I'm always looking for my next challenge, and I would be happy to hear from you.
+            digital media.  I'm always looking for my next big challenge, and I would be happy to hear from you soon.
         </p>
     </div>
     <div id="dashboard__info-right">
@@ -50,9 +50,7 @@ const DashboardInfo = () => (
         <p id="dashboard__info-thanks">
             <em>Thanks.</em>
         </p>
-        <p id="dashboard__info-signature">
-        -Travis Turner
-        </p>
+        
     </div>
   </div>
 );

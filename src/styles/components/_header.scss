@@ -6,10 +6,14 @@
   }
 
 .header {
-  background: #4183e1;
+  background: $med-blue;
   font-family: 'Josefin Sans', sans-serif; 
   font-weight: 100; 
   font-size: 2rem;
+}
+header a {
+  color: white;
+  text-decoration: none;
 }
 
 .header__content {

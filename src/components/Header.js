@@ -50,8 +50,9 @@ class Header extends React.Component {
       <header className="header">
       <div className="header__content">
         <div className="header__title">
-          Travis Turner
+          <Link to="/">Travis Turner
           <p>Web Developer</p>
+          </Link>
         </div>
         
         <div id="header__nav">

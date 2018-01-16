@@ -4,7 +4,7 @@
     justify-content: flex-start;
     height: 400px;
     background: #4183e1;
-    font-family: 'Open Sans Condensed', sans-serif; 
+    font-family: $open-sans; 
     color: white;
     margin-top: -50px;
     letter-spacing: 3px;
@@ -32,7 +32,7 @@
     padding: 20px;
     border-radius:10px;
     text-transform: uppercase;
-    font-family: 'Open Sans Condensed', sans-serif; 
+    font-family: $open-sans; 
     font-weight: 700;
     letter-spacing: 6px;
     transition-property: background-color;
