@@ -1,0 +1,45 @@
+#dashboard__info {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 1.8rem; 
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 100px;
+}
+#dashboard__info-left {
+    width: 70%;
+    padding: 40px 30px;
+}
+#dashboard__info-right {
+    padding: 40px 30px;
+}
+.fa:hover {
+    color: #53a7ea;
+}
+#dashboard__info-thanks {
+    margin-top: 100px;
+    text-indent: 5rem;
+}
+#dashboard__info-signature {
+    font-size: 1.2rem;
+    text-indent: 10rem;
+}
+@media screen and (max-width: 800px){
+    #dashboard__info {
+        flex-direction: column;
+    }
+    #dashboard__info-left {
+        width: 100%;
+    }
+    #dashboard__info-right {
+        font-size: 3.0rem;
+    }
+    #rule {
+        border: 0px solid white;
+    }
+    #dashboard__info-thanks {
+        font-size: 1.5rem;
+    }
+  }

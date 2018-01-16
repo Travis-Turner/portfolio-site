@@ -40,12 +40,14 @@
   text-decoration: none;
   color: white;
   margin-bottom: 40px;
-  transition-property: border-color;
-  transition-duration: 0.5s;
-  border-color: #4183e1;
+  transition-property: color;
+  transition-delay: 0.1s;
 }
 .header__link:hover {
-  border-bottom: 2px solid;
+  color: #50ffe2;
+}
+.header__link:active {
+  color:#90c6ff;
 }
 
 .header__email {
@@ -59,6 +61,7 @@
 
 .header--active {
   font-weight: 400;
+  color: #50ffe2;
 }
 //hamburger menu
 .fa-bars, .fa-times {
@@ -71,6 +74,9 @@
   margin-top: -60px;
   width: 25px;
 }
+.menu-bar:hover {
+  cursor: pointer;
+}
 //media queries
 @media screen and (max-width: 641px){
   .header__content {
@@ -79,7 +85,6 @@
   }
   .header__title {
     text-align: center;
-    padding-bottom: 10px;
   }
   #header__nav {
     margin-top: -15px;
@@ -91,7 +96,8 @@
     margin-bottom: 20px;
   }
   #navbar__container {
-    margin-top: 70px;
+    text-align: left;
+    padding-top: 20px;
   }
 }
 @media screen and (max-width: 360){
