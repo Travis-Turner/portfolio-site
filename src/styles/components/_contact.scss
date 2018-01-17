@@ -4,7 +4,7 @@
     background-color: $med-blue;
     color: white;
     margin-top: -40px;
-    height: 100vh;
+    padding-bottom: 150px;
 }
 #form__container h1 {
     text-align: center;
@@ -30,5 +30,137 @@
 }
 form { 
     background-color: $med-blue;
+    margin: 0 auto;
+    line-height: 42px;
 }
+//// ----
+#form__form-container {
+    width: 90%;
+    margin: 0 auto;
+}
+#form__form-container label {
+    display: block;
+}
+#form__form-header {
+    text-align: center;
+}
+.form__row {
+    display: flex;
+    justify-content: flex-start;
+    width: 60%;
+    margin: 0 auto;
+}
+.form__row h3 {
+    width: 100%;
+    text-align: center;
+    background-color: #303054;
+    padding: 20px;
+}
+input {
+    background-color: #2b5490;
+    padding: 5px;
+    border: none;
+    color: white;
+    font-family: $open-sans;
+    letter-spacing: 2px;
+    width: 200px;
+}  
+.inner__row {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+} 
+.input__row {
+    justify-content: space-around;
+}
+textarea {
+    resize: none;
+    height: 200px;
+    width: 90%;
+    border: none;
+    color: white;
+    background-color: #2b5490;
+    font-family: $open-sans;
+}
+#your__message {
+    margin: 20px;
+    padding: 20px;
+}
+.required {
+    color: #70e9f1;
+    font-size: 2.5rem;
+}
+#flash__message {
+    text-align: center;
+    background-color: #303054;
+    padding: 20px;
+    width: 30%;
+    margin: 40px auto;
+}
+#form__email, #form__phone {
+    border-left: 2px solid white;
+    padding-left: 20px;
+}
+
+//button
+#button__container {
+    text-align: center;
+    margin-top: 40px;
+    margin-left: -25px;
+}
+#submit__button {
+    border: none;
+    background-color:#31609c;
+    color: white;
+    padding: 20px;
+    border-radius:10px;
+    text-transform: uppercase;
+    font-family: $open-sans; 
+    font-weight: 700;
+    letter-spacing: 6px;
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+#submit__button:hover {
+    background-color:#50a2ff;
+    box-shadow: inset 0 0 0 0.5px #53a7ea;
+}
+#submit__button:active {
+    background-color:#90c6ff;
+}
+
+@media screen and (max-width: 950px){
+    .inner__row {
+        flex-direction: column;
+    }
+    input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 766px){
+    #button__container {
+        margin-left: 0;
+    }
+    #submit__button {
+        width: 80%;
+    }
+    .form__row {
+        width: 100%;
+    }
+    #form__row3 {
+        width: 110%;
+    }
+    #your__message {
+        padding: 0;
+    }
+    #form__info {
+        width: 80%;
+        font-size: 3.0rem;
+    }
+  }
+
+
+
 
