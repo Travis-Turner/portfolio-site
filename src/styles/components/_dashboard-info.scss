@@ -26,6 +26,9 @@
     font-size: 1.2rem;
     text-indent: 10rem;
 }
+#dashboard__info-h2 {
+    margin-top: 5px;
+}
 @media screen and (max-width: 800px){
     #dashboard__info {
         flex-direction: column;
