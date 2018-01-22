@@ -28,7 +28,7 @@ const DashboardInfo = () => (
         <p>
             Though I am not specifically a graphic designer, I am experienced with tools such as 
             &nbsp;<strong>Adobe Illustrator</strong>, <strong>Adobe Photoshop</strong>, and 
-            <strong>Sketch</strong>.  I have an eye - or more appropriately, a feel - for strong <strong>UX and UI</strong> experiences.
+            <strong>&nbsp;Sketch</strong>.  I have an eye - or more appropriately, a feel - for strong <strong>UX and UI</strong> experiences.
         </p>
         <h2>But wait, there's more</h2>
         <p>
