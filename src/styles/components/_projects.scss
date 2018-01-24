@@ -26,6 +26,7 @@ $glow-blue: #00E3FF;
     display: flex;
     justify-content: center;
     flex-grow: 1;
+    position: relative;
 }
 #web-dev__container {
     background-color: $web-blue;
@@ -58,6 +59,7 @@ $glow-blue: #00E3FF;
     #graphic-design__flex {
         margin-bottom: -20px;
         margin-right: 20px;
+        z-index: 2;
     }
 }
 #h3-design {
@@ -67,7 +69,9 @@ $glow-blue: #00E3FF;
 /* CATEGORY BOXES */
 /* Rectangle 3: */
 .category-box {
-    background-color: $med-blue;
+    border: 1px solid white;
+    background-color: rgba(255,255,255,0.0);
+    z-index: 2;
     width: 80%;
     height: 180px;
     margin-top: 40px;
@@ -81,19 +85,11 @@ $glow-blue: #00E3FF;
 }
 .category--link {
     text-decoration: none;
-    -webkit-transition: background-color 0.6s; /* Safari */
-    transition: background-color 0.6s;
-    -webkit-transition: box-shadow 0.4s; /* Safari */
-    transition: box-shadow 0.6s;
-    transition: background-size 2s ease-in;
-    -moz-transition: background-size 2s ease-in;
-    -ms-transition: background-size 2s ease-in;
-    -o-transition: background-size 2s ease-in;
-    -webkit-transition: background-size 2s ease-in
+    -webkit-transition: box-shadow 0.8s 0.1; /* Safari */
+    transition: box-shadow 0.8s 0.1s;
 }
 .category--link:hover {
-    box-shadow: 0 2px 50px 3px $glow-blue;
-    background-color: white;
+    box-shadow: 0 2px 30px 3px $glow-blue;
 }
 .category--link:hover .web-title {
     color: $web-blue;
@@ -104,6 +100,48 @@ $glow-blue: #00E3FF;
 .category--link:hover .graphic-title {
     color: $graphic-blue;
 }
+
+/* SHAPES */
+.project-shape {
+    z-index: 1;
+    transition: all 0.5s;
+    margin-top: 40px;
+    height: 180px;
+    width: 80%;
+    background-color: white;
+    position: absolute;
+}
+#web-shape {
+    -webkit-clip-path: polygon(0 81%, 100% 56%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 81%, 100% 56%, 100% 100%, 0% 100%);
+}
+#prog-shape {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 19%);
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 19%);
+}
+#graphic-shape {
+    z-index: 1;
+    transition: all 0.5s;
+    height: 180px;
+    width: 80%;
+    position: absolute;
+    background-color: white;
+    -webkit-clip-path: polygon(0 0, 18% 0, 43% 100%, 0 100%);
+    clip-path: polygon(0 0, 18% 0, 43% 100%, 0 100%);
+}
+.category--link:hover + #web-shape {  
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.category--link:hover + #prog-shape {  
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.category--link:hover #graphic-shape {  
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1000px){
@@ -119,32 +157,8 @@ $glow-blue: #00E3FF;
             font-size: 2.0rem;
         }
     }
-    #graphic-design__container {
-        #h3-design {
-            margin-top: -27px;
-            padding-bottom: 10px;        
-        }
-    }
-    #web-dev__container {
-        #h3-dev {
-            margin-top: -27px;
-        }
-    }
 }
 @media screen and (max-width: 620px) {
-    #projects__container {
-        flex-direction: column;
-    }
-    #web-dev__container, #programming__container, #graphic-design__container {
-        height: 350px;
-        width: 100%;
-        align-items: center;
-    }
-    .category-box {
-        width: 70%;
-        height: 250px;
-        margin: 0;
-    }
     #projects__container {
         h3 {
             font-size: 3.5rem;
